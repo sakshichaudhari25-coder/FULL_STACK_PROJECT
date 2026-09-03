@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Gemini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <h1>Ask Gemini</h1>
+       <p>Ask a question and get an AI answer</p>
+       
+       <form id="questionform">
+        <input type="text" id="question" placeholder="Enter your question...">
+        <button type="submit">Ask Gemini</button>
+       </form>
+       <div class="answer-container">
+        <h2>Answer</h2>
+        <p id="answer">
+            Your answer will appear here...
+        </p>
+
+       </div>
+       
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <script src="script.js"></script>
+</body>
+</html>
