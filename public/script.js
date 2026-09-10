@@ -13,7 +13,7 @@ form.addEventListener("submit", async (event) => {
         const response = await axios.post("/ask", {
             question: question
         });
-        answer.textContent = response.data.answer;
+        answer.innerHTML = marked.parse(response.data.answer);
     } catch (error) {
         console.log(error);
         answer.textContent = "Something went wrong.";

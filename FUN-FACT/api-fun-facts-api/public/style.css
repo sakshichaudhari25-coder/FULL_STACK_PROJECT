@@ -20,84 +20,59 @@ body {
     padding: 40px;
     border-radius: 20px;
     border: 1px solid #2d2d42;
-
     box-shadow:0 20px 60px rgba(0, 0, 0, 0.5),0 0 30px rgba(124, 92, 255, 0.08);
+    text-align: center;
 }
 h1 {
-    text-align: center;
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 12px;
     background: linear-gradient(90deg, #8b5cf6, #06b6d4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .container > p {
-    text-align: center;
     color: #9999ad;
-    margin-bottom: 30px;
     font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
-form {
+#fact {
+    background: #11111c;
+    border: 1px solid #2d2d42;
+    border-radius: 14px;
+    padding: 25px;
+    min-height: 130px;
     display: flex;
-    gap: 12px;
-}
-input {
-    flex: 1;
-    padding: 15px 18px;
-    border-radius: 10px;
-    border: 1px solid #34344a;
-    outline: none;
-    background: #10101a;
-    color: white;
-    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    color: #d1d1df;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
     transition: 0.3s;
 }
-
-input::placeholder {
-    color: #77778c;
-}
-input:focus {
+#fact:hover {
     border-color: #8b5cf6;
-    box-shadow: 0 0 12px rgba(139, 92, 246, 0.25);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.15);
 }
-button {
-    padding: 15px 22px;
+#factButton {
+    padding: 15px 25px;
     border: none;
     border-radius: 10px;
     background: linear-gradient(135deg, #8b5cf6, #6366f1);
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
-button:hover {
-    transform: translateY(-2px);
+#factButton:hover {
+    transform: translateY(-3px);
     box-shadow:0 8px 20px rgba(99, 102, 241, 0.35);
 }
-button:active {
+#factButton:active {
     transform: translateY(0);
 }
-.answer-container {
-    margin-top: 30px;
-    background: #11111c;
-    padding: 25px;
-    border-radius: 14px;
-    border: 1px solid #2d2d42;
-    min-height: 150px;
-}
-.answer-container h2 {
-    color: #a78bfa;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-#answer {
-    color: #d1d1df;
-    line-height: 1.7;
-    font-size: 16px;
-    word-wrap: break-word;
-}
-
 @media (max-width: 600px) {
     .container {
         padding: 25px;
@@ -105,10 +80,11 @@ button:active {
     h1 {
         font-size: 32px;
     }
-    form {
-        flex-direction: column;
+    #fact {
+        font-size: 15px;
+        padding: 20px;
     }
-    button {
+    #factButton {
         width: 100%;
     }
 }
