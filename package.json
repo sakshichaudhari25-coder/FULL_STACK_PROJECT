@@ -2,15 +2,18 @@
     "name": "ask-gemini",
     "version": "1.0.0",
     "main": "server.js",
+    "type":"module",
     "scripts": {
-        "start": "node server.js"
+        "start": "nodemon server.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "description": "",
     "dependencies": {
+        "@google/genai": "^2.22.0",
         "axios": "^1.19.0",
+        "cors": "^2.8.6",
         "dotenv": "^17.4.2",
         "express": "^5.2.1",
         "marked": "^18.0.12"
